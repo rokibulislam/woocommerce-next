@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const AccountDetails = props => {
+const WishlistItem = props => {
     return (
         <header>
-            Account Details
+            WishlistItem
         </header>
     )
 }
 
-export default Dashboard;
+export default WishlistItem;

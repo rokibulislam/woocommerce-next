@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const AccountDetails = props => {
+const CategoryFilter = props => {
     return (
         <header>
-            Account Details
+            CategoryFilter
         </header>
     )
 }
 
-export default Dashboard;
+export default CategoryFilter;

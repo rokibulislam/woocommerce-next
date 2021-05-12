@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const AccountDetails = props => {
+const Tree = props => {
     return (
         <header>
-            Account Details
+            Tree
         </header>
     )
 }
 
-export default Dashboard;
+export default Tree;

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const AccountDetails = props => {
+const LoginForm = props => {
     return (
         <header>
-            Account Details
+            LoginForm
         </header>
     )
 }
 
-export default Dashboard;
+export default LoginForm;

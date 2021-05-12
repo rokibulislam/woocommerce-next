@@ -11,4 +11,10 @@ const Shop = (props) => {
     )
 }
 
+const mapStateToProps = state => {
+    return {
+        
+    }
+}
+
 export default Shop;
