@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-const ProductCategory = ( ) => {
+const ParentCategory = (props) => {
     return (
         <>  
-            Product Category
+            ParentCategory
         </>
     )
 }
 
-export default ProductCategory
+export default ParentCategory

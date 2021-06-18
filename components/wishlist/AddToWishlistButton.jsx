@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
 
 const AddToWishlistButton = props => {
     return (

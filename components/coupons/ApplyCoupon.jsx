@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
 
 const ApplyCoupon = props => {
     return (

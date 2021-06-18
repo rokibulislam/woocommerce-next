@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
+import DefaultLayout from "../layout/Layout";
 
 const Login = props => {
     const [pageLoading,setPageLoading] = useState(true)
-    useEffect( () => {})
+    
+    useEffect( () => {
+
+    }, []);
 
     return (
-        <>
+        <DefaultLayout>
             Login
-        </>
+        </DefaultLayout>
     )
 }
 

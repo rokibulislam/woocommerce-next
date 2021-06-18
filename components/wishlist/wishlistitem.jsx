@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import Link from 'next/link'
 
 const WishlistItem = props => {
     return (

@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react'
+import DefaultLayout from '../../layout/Layout'
 
 const SingleProduct = props => {
 
     useEffect( () => {})
 
     return (
-        <>
-        Single Product
-        </>
+        <DefaultLayout>
+            Single Product
+        </DefaultLayout>
     )
+}
+
+SingleProduct.getInitialProps = async (ctx) => {
+    return {
+        
+    }
 }
 
 export default SingleProduct;

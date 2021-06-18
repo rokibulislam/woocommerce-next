@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 
-const CartTotal = () => {
+const CartItem = () => {
     return (
         <>
-        CartTotal
+
         </>
     )
 }
 
-export default CartTotal;
+export default CartItem;

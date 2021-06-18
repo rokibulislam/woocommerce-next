@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'next/link'
+import DefaultLayout from "../layout/Layout";
 
 const Cart = props => {
 
-    useEffect( () => {})
+    useEffect( () => {
+
+    }, [])
 
     return (
-        <>
-        Cart
-        </>
+        <DefaultLayout>
+            Cart
+        </DefaultLayout>
     )
 }
 

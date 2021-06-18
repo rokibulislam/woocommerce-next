@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import Link from 'next/link'
 
-const AccountDetails = props => {
+const Dashboard = props => {
     return (
         <header>
-            Account Details
+            Dashboard
         </header>
     )
 }

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { connect } from "react-redux";
 
-const Reviews = (props) => {
+const Product = (props) => {
     return (
         <>
-            Reviews 
+            Product 
         </>
     )
 }
 
-export default Reviews
+export default Product

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-const Header = props => {
+const Footer = props => {
     return (
-        <header>
-            Header
-        </header>
+        <div>
+            Footer
+        </div>
     )
 }
 
-export default Header;
+export default Footer;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-const CartItem = () => {
+const PaypalCheckout = () => {
     return (
         <>
-        CartItem
+            PaypalCheckout
         </>
     )
 }
 
-export default CartItem;
+export default PaypalCheckout;
