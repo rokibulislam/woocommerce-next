@@ -2,29 +2,25 @@ import React, { useState, useEffect } from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import DefaultLayout from "../layout/Layout";
 
-const Home = (props) => {
+const Index = props => {
 
   useEffect( () => {
+    async function fetchProductCategories() {
+      
+    }
 
+    fetchProductCategories();
   }, [] );
 
   return (
   <DefaultLayout>
-    <div className={styles.container}>
+    <div>
       main content
     </div>
   </DefaultLayout>
   )
 }
 
-Home.getInitialProps = async (ctx) => {
-
-  return {
-
-  }
-}
-
-export default Home;
+export default Index;

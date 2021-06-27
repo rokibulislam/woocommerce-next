@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react'
 import { connect } from "react-redux";
 import Router from "next/router";
 
-const Shop = (props) => {
+const ShopLayout = (props) => {
     const [loading, setLoading] = useState(false);
     return (
         <>
             Shop
+            {props.children}
         </>
     )
 }
@@ -17,4 +18,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default Shop;
+export default ShopLayout;

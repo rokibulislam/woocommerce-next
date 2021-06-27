@@ -1,5 +1,3 @@
-import '../styles/globals.css'
-
 import App from 'next/app'
 import Router from 'next/router'
 import { Provider } from 'react-redux'

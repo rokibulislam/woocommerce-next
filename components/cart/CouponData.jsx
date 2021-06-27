@@ -6,6 +6,10 @@ const CouponData = () => {
     useEffect( () => {
 
     }, [] )
+
+    const handleRemoveCoupon = async id => {
+
+    }
     
     return (
         <>

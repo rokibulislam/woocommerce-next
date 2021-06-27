@@ -3,19 +3,15 @@ import DefaultLayout from '../../layout/Layout'
 
 const SingleProduct = props => {
 
-    useEffect( () => {})
+    useEffect( () => {
+        
+    })
 
     return (
         <DefaultLayout>
             Single Product
         </DefaultLayout>
     )
-}
-
-SingleProduct.getInitialProps = async (ctx) => {
-    return {
-        
-    }
 }
 
 export default SingleProduct;

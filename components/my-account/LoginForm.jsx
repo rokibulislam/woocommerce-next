@@ -11,7 +11,7 @@ const LoginForm = props => {
     
     return (
         <header>
-            LoginForm
+            Login
         </header>
     )
 }

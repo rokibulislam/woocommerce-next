@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from 'react'
 import DefaultLayout from '../../layout/Layout'
+import ProductListPage from '../../components/page/ProductListPage'
 
 const Shop = props => {
-    useEffect( () => {})
-
     return (
         <DefaultLayout>
-            Shop Pages
+            <ProductListPage />
         </DefaultLayout>
     )
 }
-
-Shop.getInitialProps = async (ctx) => {
-    return {
-        
-    }
-};
 
 export default Shop;

@@ -9,6 +9,10 @@ const MiniCart = () => {
         setLoading(false);
     }, []);
 
+    const handleRemoveItemFromCart = async key => {
+        
+    }
+
     return (
         <li className="cart_menu dropdown">
             <div className="dropdown__menu">

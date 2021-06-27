@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import DefaultLayout from "../layout/Layout";
+import RegisterForm from "../components/my-account/RegisterForm";
 
 const Register = props => {
 
@@ -7,7 +8,7 @@ const Register = props => {
 
     return (
         <DefaultLayout>
-            Register
+            <RegisterForm/>
         </DefaultLayout>
     )
 }

@@ -1,49 +1,41 @@
 import React, { useState, useEffect } from 'react'
 import Link from "next/link";
 
-const ParentCategory = ({category}) => {
+const ProductTag = ({tag}) => {
     return (
         <div className="col-lg-3 col-md-6 col-sm-12 mb-30">
-            <div className="category__item">
+            <div className="tag__item">
                 <Link
                     href={
                         {
-                            pathname: "/product-category/[category]",
-                            query:{ productCategory: JSON.stringify(category) }
+                            pathname: `/product-tag/${tag.id}`,
+                            query:{ producttag: JSON.stringify(tag) }
                         }
                     }
-                    as={`/product-category/${category.id}`}
+                    as={`/product-tag/${tag.id}`}
                 >
                     <a>
-                        <img
-                        src={
-                            null !== category.image
-                            ? category.image.src
-                            : "/static/images/placeholder.png"
-                        }
-                        alt={category.name}
-                        />
-                        <h4 className="category__label text-center">
-                        {category.name} <small>({category.count})</small>
+                        <h4 className="tag__label text-center">
+                        {tag.name} <small>({tag.count})</small>
                         </h4>
                     </a>
                 </Link>
             </div>
 
             <style jsx>{`
-                .category__item {
+                .tag__item {
                 text-align: center;
                 border-radius: 5px;
                 box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.06);
                 }
-                .category__item a {
+                .tag__item a {
                 display: block;
                 padding: 32px;
                 }
-                .category__label {
+                .tag__label {
                 margin-top: 10px;
                 }
-                .category__item img {
+                .tag__item img {
                 box-shadow: 0px 13px 24px 0px rgba(0, 0, 0, 0.06);
                 width: 130px;
                 height: 95px;
@@ -55,4 +47,4 @@ const ParentCategory = ({category}) => {
     )
 }
 
-export default ParentCategory
+export default ProductTag
