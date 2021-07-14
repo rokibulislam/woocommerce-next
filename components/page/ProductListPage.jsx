@@ -12,7 +12,6 @@ const ProductListPage = (props) => {
     useEffect( async () => {
         const response = await wcRequest('products/');
         setItems(response.data);
-        console.log(response.data);
     },['items'])
 
 

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { useSelector } from 'react-redux'
 import axios from "axios";
 
 const AddToCartButton = ( { product } ) => {
@@ -33,17 +35,21 @@ const AddToCartButton = ( { product } ) => {
 
     return (
         <>
-             { (product.type === "simple") && (
-                <>
-            <button
-                onClick={e => handleAddToCartClick(product.id)}
-                className="btn btn--primary mr-10"
-            >
+            { (product.type === "simple") && (
+              <button
+                  onClick={e => handleAddToCartClick(product.id)}
+                  className="btn btn--primary mr-10"
+              >
                 Add to cart
                 <i className="fas fa-spinner fa-spin ml-10"></i>
-            </button>
-                </>
-             )}
+              </button>
+            )}
+
+            { (product.type === "external") && (
+              <a>
+                external
+              </a>
+            )}
         </>
     )
 }

@@ -7,7 +7,7 @@ const Product = ({ product }) => {
     console.log(product);
     return (
         <>
-            <Link
+            {/* <Link
                 href={{
                     pathname: "/product/[slug]",
                     query: { productData: JSON.stringify(product) }
@@ -22,7 +22,7 @@ const Product = ({ product }) => {
                     )}
                 </a>
             </Link>
-           
+            */}
             <ul>
                 {
                     product.categories.map( category => {

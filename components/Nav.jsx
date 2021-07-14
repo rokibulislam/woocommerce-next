@@ -12,7 +12,7 @@ const links = [
 
 const Nav = props => {
     return (
-        <header>
+        <nav className="site__nav">
             <ul>
             {
                 links.map( (item,index) => (
@@ -22,7 +22,7 @@ const Nav = props => {
                 ))
             }
             </ul>
-        </header>
+        </nav>
     )
 }
 

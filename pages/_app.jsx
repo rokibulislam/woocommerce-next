@@ -2,9 +2,9 @@ import App from 'next/app'
 import Router from 'next/router'
 import { Provider } from 'react-redux'
 import { wrapper } from '../store/index';
-
 import { useStore } from 'react-redux';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../public/styles/style.scss";
 Router.events.on('routeChangeStart', url => {});
 Router.events.on('routeChangeComplete', ()=> console.log('complete') );
 Router.events.on('routeChangeError', ()=> console.log('error') );
